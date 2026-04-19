@@ -35,11 +35,10 @@ print(f"Akurasi Naive Bayes   : {nb_accuracy * 100:.2f}%")
 print(f"Akurasi Decision Tree : {dt_accuracy * 100:.2f}%")
 print("\nLaporan Klasifikasi Naive Bayes:\n", classification_report(y_test, nb_predictions, target_names=target_names))
 
-# 6. Visualisasi (Syarat Tugas)
+# 6. Visualisasi
 plt.figure(figsize=(12, 8))
 plot_tree(dt_model, feature_names=feature_names, class_names=target_names, filled=True, rounded=True)
 plt.title("Visualisasi Decision Tree")
-# Simpan gambar untuk dimasukkan ke PPT
 plt.savefig("visualisasi_tree.png")
 print("Visualisasi berhasil disimpan sebagai 'visualisasi_tree.png'")
 plt.show()
